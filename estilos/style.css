@@ -55,4 +55,16 @@ section#login > div#formulario {
 /*
 Outras Media Queries para o projeto
 https://www.youtube.com/watch?v=Ec7Vu96wdpA&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=42
+
+Criando o formulário de login
+https://www.youtube.com/watch?v=htekZ2wA7Zo&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=43
 */
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+div#formulario > p {
+    font-size: 0.8em;
+}
