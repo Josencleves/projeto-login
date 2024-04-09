@@ -8,11 +8,16 @@ paleta de cores:
 
 
 */
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body, html {
@@ -68,3 +73,61 @@ div#formulario > h1 {
 div#formulario > p {
     font-size: 0.8em;
 }
+.campo > label {
+    display: none;
+}
+.campo {
+    background-color: var(--lilas);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+
+/*
+Aplicando estilo ao formulário de login
+https://www.youtube.com/watch?v=JDS9ZLpoS6E&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=44
+*/
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover {
+    background-color: #377876 ;
+}
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-top: 5px;
+    background-color: white;
+    color: #377876;
+    border: 1px solid #59c7c3;
+    text-decoration: none;
+    margin-top: 5px;
+
+}
+form > a.botao:hover {
+    background-color: #59c7c3;
+}
+
+form > a.botao > span {
+    font-size: 0.9em;
+}
+
+/*
+Finalizando projeto tela de login
+https://www.youtube.com/watch?v=c2PePX8joKc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=45
+*/
