@@ -35,7 +35,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 500px;
@@ -44,6 +43,11 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+    /*
+    todas as transofrmações e transições 
+    ,devem ser colocadas no final do seletor
+    */
 }
 section#login > div#imagem {
     display: block;
@@ -51,7 +55,7 @@ section#login > div#imagem {
     height: 200px;
     background-size: cover;
     background-position: left bottom;
-    
+      
 }
 section#login > div#formulario {
     padding: 10px;
@@ -81,10 +85,32 @@ div#formulario > p {
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid var(--lilas);
+    
 }
 
+.campo span{
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo > input {
+    background-color: #59c7c3;
+    font-size: 1em;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transform: translateY(-12px);/*Sempre utilizar o transform na ultima linha do seletor*/
+}
+.campo > input:focus-within{
+    background-color: white;
+}
 
 /*
 Aplicando estilo ao formulário de login
@@ -131,3 +157,4 @@ form > a.botao > span {
 Finalizando projeto tela de login
 https://www.youtube.com/watch?v=c2PePX8joKc&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=45
 */
+
